@@ -6,30 +6,17 @@
     "start": "webpack serve --mode development --config webpack.config.dev.js",
     "build": "webpack --mode production --config webpack.config.prod.js",
     "json-server": "json-server --watch db.json --port 3001",
-    "lint": "eslint .",
-    "precommit": "npm run lint-staged"
-  },
-  "lint-staged": {
-    "*.js": [
-      "eslint --fix",
-      "git add"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run precommit"
-    }
+    "prepare": "husky install",
+    "lint": "eslint ."
   },
   "devDependencies": {
     "@babel/core": "^7.17.0",
     "@babel/preset-env": "^7.17.0",
     "babel-loader": "^8.2.3",
     "eslint": "^8.56.0",
-    "eslint-plugin-html": "^7.1.0",
     "html-webpack-plugin": "^5.5.0",
     "husky": "^8.0.3",
     "json-server": "^1.0.0-alpha.21",
-    "lint-staged": "^15.2.0",
     "webpack": "^5.66.0",
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.7.4",

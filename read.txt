@@ -1,1 +1,16 @@
 npm install webpack webpack-cli --save-dev
+
+  // "lint": "eslint .",
+    // "precommit": "npm run lint-staged"
+  },
+  // "lint-staged": {
+  //   "*.js": [
+  //     "eslint --fix",
+  //     "git add"
+  //   ]
+  // },
+  // "husky": {
+  //   "hooks": {
+  //     "pre-commit": "npm run precommit"
+  //   }
+  // },
