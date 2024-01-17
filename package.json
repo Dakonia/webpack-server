@@ -7,7 +7,7 @@
     "build": "webpack --mode production --config webpack.config.prod.js",
     "json-server": "json-server --watch db.json --port 3001",
     "lint": "eslint .",
-    "precommit": "lint-staged"
+    "precommit": "npm run lint-staged"
   },
   "lint-staged": {
     "*.js": [
