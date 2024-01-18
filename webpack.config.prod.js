@@ -1,5 +1,4 @@
 const path = require('path');
-/* global require, module, __dirname */
 
 module.exports = {
   entry: './src/index.js',

@@ -1,6 +1,5 @@
 const path = require('path');
 const { HotModuleReplacementPlugin } = require('webpack');
-/* global require, module, __dirname */
 
 module.exports = {
   entry: './src/index.js',

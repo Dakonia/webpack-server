@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', async () => {
-  const response = await fetch('http://localhost:3000/posts'); // Обращаемся к правильному эндпоинту
+  const response = await fetch('http://localhost:3001/posts'); // Обращаемся к правильному эндпоинту
   const posts = await response.json();
 
   const postsList = document.getElementById('posts-list');
