@@ -1,26 +1,23 @@
 module.exports = {
-  env: {
-    browser: true,
-    es2021: true,
+  "env": {
+      "browser": true,
+      "es2021": true,
+      "node": true 
   },
-  parserOptions: {
-    ecmaVersion: 2021,
-  },
-  overrides: [
-    {
-      env: {
-        node: true,
-      },
-      files: [
-        ".eslintrc.{js,cjs}",
-      ],
-      parserOptions: {
-        sourceType: "script",
-      },
-    },
+  "extends": "eslint:recommended",
+  "overrides": [
+      {
+          "files": ["webpack.config.dev.js", "webpack.config.prod.js"],
+          "env": {
+              "browser": true,
+              "node": false 
+          }
+      }
   ],
-  rules: {
-    "no-console": "off",
-    "brace-style": ["error", "1tbs", { "allowSingleLine": true }],
+  "parserOptions": {
+      "ecmaVersion": "latest",
+      "sourceType": "module"
   },
-};
+  "rules": {
+  }
+}
